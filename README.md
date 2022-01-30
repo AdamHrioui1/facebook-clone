@@ -1,7 +1,4 @@
 # facebook-clone
 
-# first
-# second
-# third 
-## fourth
-## seventh yeey
+This is my Facebook clone website: 
+
