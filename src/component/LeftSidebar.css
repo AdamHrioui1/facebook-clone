@@ -1,5 +1,5 @@
 .left__sidebar {
-    position: fixed;
+    position: sticky;
     top: 50px;
     left: 0;
     width: 250px;
@@ -7,10 +7,8 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     padding: 15px;
-    border: 1px solid #000;
 }
 .left__sidebar__icon__container {
     padding: 5px;

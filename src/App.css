@@ -6,8 +6,12 @@
 }
 
 body {
+    position: relative;
     width: 100%;
     min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
 
     background-color: #F0F2F5;
 }
@@ -19,26 +23,39 @@ body {
     max-width: 1700px;
 
     display: flex;
+    justify-content: center;
 }
 
 .content {
-    position: absolute;
-    left: 250px;
+    /* position: absolute;
+    left: 250px; */
 
     width: 100%;
+    min-height: (100vh - 50px);
     max-width: 900px;
     display: flex;
     justify-content: center;
+
 }
 
 .main__content {
     width: 100%;
     padding: 0px 40px;
-    max-width: 750px;
-    /* border: 1px solid #f0000c; */
+    max-width: 600px;
 }
 @media only screen and (max-width: 1100px) {
     .content {
         left: 0;
     }
 }
+@media only screen and (max-width: 650px) {
+    * {
+        cursor: default;
+    }
+    .main__content {
+        width: 100vw;
+        padding: 0;
+    }
+}
+
+

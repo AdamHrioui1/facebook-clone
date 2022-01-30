@@ -67,6 +67,7 @@ body {
 
 /*___________middle navbar_________________*/
 .middle__navbar {
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -135,4 +136,17 @@ body {
 }
 .right__navbar__icon:hover {
     background-color: #dbdbdb;
+}
+@media only screen and (max-width: 650px) {
+    .right__navbar__icon, .research {
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img {
+        width: 33px;
+    }
 }
