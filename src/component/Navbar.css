@@ -20,6 +20,7 @@ body {
     justify-content: space-between;
 
     background-color: #fff;
+    z-index: 10001;
 }
 
 .left__navbar {
