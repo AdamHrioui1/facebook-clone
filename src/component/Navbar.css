@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+}
+
+.left__navbar {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    margin-left: 10px;
+}
+.facebook__logo {
+    width: 10px;
+}
+
+.research {
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+}
+
+.research input {
+    border: none;
+    margin-left: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+.research__logo svg {
+    padding-top: 3px;
+    margin-left: 3px;
+    width: 15px;
+    fill: #6b6b6b;
+}
+
+@media only screen and (max-width: 1200px) {
+    .research {
+        width: 35px;
+    }
+    .research input {
+        display: none;
+    }
+}
+
+/*___________middle navbar_________________*/
+.middle__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.middle__navbar__icon {
+    padding: 5px 30px;
+}
+.middle__navbar__icon:hover {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.middle__navbar__icon svg {
+    fill: #65676b;
+    width: 25px;
+}
+.middle__navbar__icon.home {
+    border-bottom: 2px solid #1B74E4;
+}
+.middle__navbar__icon.plus {
+    display: none;
+}
+.middle__navbar__icon.home svg {
+    fill: #1B74E4;
+}
+
+@media only screen and (max-width: 1100px) {
+    .middle__navbar__icon.groupes {
+        display: none;
+    }
+    .middle__navbar__icon.plus {
+        display: inline;
+    }  
+}
+@media only screen and (max-width: 700px) {
+    .middle__navbar__icon {
+        display: none;
+    }
+    .middle__navbar__icon.plus {
+        padding: 5px 15px;
+        border-radius: 10px;
+    }
+    .left__navbar {
+        margin-right: 5px;
+    }
+}
+/*_____________ right navbar ______________*/
+.right__navbar {
+    margin-right: 10px;
+    display: flex;
+}
+.right__navbar__icon {
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #E4E6EB;
+    cursor: pointer;
+}
+.right__navbar__icon:hover {
+    background-color: #dbdbdb;
+}
